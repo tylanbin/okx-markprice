@@ -7,11 +7,11 @@ async function getMarkPrice(instId) {
             url += '&instId=' + instId;
         }
         const response = await axios.get(url, {
-            proxy: {
+            /* proxy: {
                 protocol: 'http',
                 host: '127.0.0.1',
                 port: 1081
-            }
+            } */
         });
         if (instId) {
             return response.data.data[0].markPx;

@@ -1,9 +1,7 @@
-const getMarkPrice = require('./index.js').getMarkPrice;
-const exp = require('express');
-const app = exp();
+const mp = require('./index');
 
 async function main() {
-    const btc = await getMarkPrice('BTC-USDT');
+    const btc = await mp.getMarkPrice('BTC-USDT');
     console.log(btc);
 }
 
