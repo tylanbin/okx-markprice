@@ -1,6 +1,6 @@
 {
   "name": "okx-markprice",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get mark price from okx.",
   "main": "index.js",
   "scripts": {
